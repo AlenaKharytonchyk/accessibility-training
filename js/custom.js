@@ -9,6 +9,7 @@
 
 document.querySelectorAll("#nav li").forEach((navEl, i, arr) => {
   navEl.addEventListener('click',function(e) {
+
     toggleTab(e.currentTarget.id, e.currentTarget.dataset.target);
   });
   navEl.addEventListener('keydown',(e) => {
@@ -36,6 +37,8 @@ document.querySelector('.dropMenu').addEventListener('keydown', (e)=> {
   }
 });
 
+// setInterval(() => document.querySelector('.chat-window').classList.toggle('active'), 5000);
+
 function openSkipToMain (e) {
   if(e.keyCode === 13 || e.keyCode === 32) {
     e.target.closest('.dropMenu').querySelector('ul').style.display = "block";
@@ -59,7 +62,7 @@ function toggleTab(selectedNav, targetId) {
   });
 
   var tabs = document.querySelectorAll(".tab-pane");
-
+  console.log(selectedNav, targetId)
   tabs.forEach(function(tab) {
     if (tab.id == targetId) {
       tab.style.display = "block";
@@ -69,6 +72,26 @@ function toggleTab(selectedNav, targetId) {
   });
 }
 
-function arrowNavigation() {
 
+function modalFocus(target) {
+  const activeModal = document.getElementById(target.dataset.target);
+  const modalContent = activeModal.querySelector('.modal-content ');
+  modalContent.setAttribute('tabindex', '0')
+  modalContent.focus();
+  activeModal.querySelector('.modal-close').addEventListener('click', () => {
+    modalContent.setAttribute('tabindex', '-1')
+    target.focus()
+  });
+  document.addEventListener('keydown',({keyCode}) => {
+    if(keyCode !== 27) return;
+    modalContent.setAttribute('tabindex', '-1')
+    document.getElementById(target.closest('.tab-pane').id).classList.add('is-active');
+    target.focus();
+  })
 }
+
+document.addEventListener('click', ({target}) => {
+  if(!target.classList.contains('modal-button')) return;
+  modalFocus(target);
+})
+
