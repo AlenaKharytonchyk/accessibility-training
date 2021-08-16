@@ -37,7 +37,7 @@ document.querySelector('.dropMenu').addEventListener('keydown', (e)=> {
   }
 });
 
-// setInterval(() => document.querySelector('.chat-window').classList.toggle('active'), 5000);
+setInterval(() => document.querySelector('.chat-window').classList.toggle('active'), 5000);
 
 function openSkipToMain (e) {
   if(e.keyCode === 13 || e.keyCode === 32) {
