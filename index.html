@@ -54,14 +54,14 @@
         </li>
         </ul>
     </div>
-    <nav class="hero-head">
+    <nav class="hero-head" aria-label="Main">
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a href="#" class="navbar-item logo-link">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="Home Epam">
             </a>
-            <button class="navbar-burger burger" data-target="navbarMenu" tabindex="0" aria-label="Navigation" aria-haspopup="true" aria-owns="navbarMenu">
+            <button class="navbar-burger burger" data-target="navbarMenu" tabindex="0" aria-label="Open Navigation" aria-haspopup="true" aria-owns="navbarMenu">
               <span></span>
               <span></span>
               <span></span>
@@ -73,7 +73,7 @@
               <li class="navbar-item">
                 <a href="#" class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fa fa-home"></i>
+                    <i aria-hidden="true" class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
                 </a>
@@ -81,7 +81,7 @@
               <li class="navbar-item">
                 <a href="#" class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fab fa-superpowers"></i>
+                    <i aria-hidden="true" class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
                 </a>
@@ -89,7 +89,7 @@
               <li class="navbar-item">
                 <a href="#" class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fa fa-book"></i>
+                    <i aria-hidden="true" class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
                 </a>
@@ -97,7 +97,7 @@
               <li class="navbar-item">
                 <a href="#" class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i aria-hidden="true" class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
                 </a>
@@ -137,9 +137,9 @@
     </div>
   </header>
   <main>
-    <section class="section" id="about" aria-label="About us">
+    <section class="section" id="about" aria-labelledby="aboutUs">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">About Us</h2>
+        <h2 class="title is-2" id="aboutUs">About Us</h2>
         <p class="subtitle is-5">We of all trades, master of "some"</p>
         <div class="container">
           <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
@@ -151,8 +151,8 @@
         </div>
       </div>
 
-      <article class="content container">
-        <div class="is-1 title">Hello World</div>
+      <article class="content container" aria-labelledby="helloWorld">
+        <h2 class="is-1 title" id="helloWorld">Hello World</h2>
         <p>Lorem ipsum<sup><a href="https://www.google.com" target="_blank" title="open in new window">[1]
           <span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span>
         </a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
@@ -251,10 +251,10 @@
       </article>
     </section>
 
-    <section class="hero has-background-grey-light" aria-label="Three key features">
+    <section class="hero has-background-grey-light" aria-labelledby="keyFeatures">
       <div class="container features">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Three key features</h2>
+          <h2 class="title is-2" id="keyFeatures">Three key features</h2>
           <p class="subtitle is-5">We don't hide what we do</p>
         </div>
 
@@ -262,7 +262,7 @@
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fa fa-paw"></i>
+                <i aria-hidden="true" class="fa fa-paw"></i>
               </div>
               <div class="card-content">
                 <div class="content">
@@ -279,7 +279,7 @@
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fab fa-empire"></i>
+                <i aria-hidden="true" class="fab fa-empire"></i>
               </div>
               <div class="card-content">
                 <div class="content">
@@ -297,7 +297,7 @@
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fab fa-apple"></i>
+                <i aria-hidden="true" class="fab fa-apple"></i>
               </div>
               <div class="card-content">
                 <div class="content">
@@ -314,10 +314,10 @@
       </div>
     </section>
 
-    <section class="hero is-info">
+    <section class="hero is-info" aria-labelledby="listOfTopics">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title">List of topics</h2>
+          <h2 class="title" id="listOfTopics">List of topics</h2>
           <div class="subtitle">We are always in touch we the outside world</div>
         </div>
       </div>
@@ -325,19 +325,19 @@
         <ul role="tablist">
           <li data-target="pane-1" id="1" tabindex="0" role="tab" class="is-active">
             <div class="tab-section">
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
+              <span class="icon is-small"><i aria-hidden="true" class="fa fa-image"></i></span>
               <span>Pictures</span>
             </div>
           </li>
           <li data-target="pane-2" id="2" role="tab">
             <div class="tab-section">
-              <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+              <span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </div>
           </li>
           <li data-target="pane-3" id="3" role="tab">
             <div class="tab-section">
-              <span class="icon is-small"><i class="fa fa-film"></i></span>
+              <span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
               <span>Video</span>
             </div>
           </li>
@@ -407,7 +407,7 @@
           <div class="column">
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-github-square fa-4x"></i>
+                <i aria-hidden="true" class="fab fa-github-square fa-4x"></i>
               </div>
               <div class="media-content">
                 <div class="content">
@@ -422,7 +422,7 @@
             </div>
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-empire fa-4x"></i>
+                <i aria-hidden="true" class="fab fa-empire fa-4x"></i>
               </div>
               <div class="media-content">
                 <div class="content">
@@ -439,7 +439,7 @@
           <div class="column">
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-ravelry fa-4x"></i>
+                <i aria-hidden="true" class="fab fa-ravelry fa-4x"></i>
               </div>
               <div class="media-content">
                 <div class="content">
@@ -454,7 +454,7 @@
             </div>
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-github-alt fa-4x"></i>
+                <i aria-hidden="true" class="fab fa-github-alt fa-4x"></i>
               </div>
               <div class="media-content">
                 <div class="content">
@@ -483,10 +483,10 @@
       </div>
     </div>
 
-    <section class="section has-background-grey-lighter" id="events" aria-label="Upcoming events">
+    <section class="section has-background-grey-lighter" id="events" aria-labelledby="upcomingEvents">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Upcoming events</h2>
+            <h2 class="title is-2" id="upcomingEvents">Upcoming events</h2>
             <p class="subtitle is-5">Outcoming dates for the best options</p>
           </div>
 
@@ -558,9 +558,9 @@
       </div>
     </section>
 
-    <section class="section" id="services" aria-label="Services">
+    <section class="section" id="services" aria-labelledby="servicesLabel">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Services</h2>
+        <h2 class="title is-2" id="servicesLabel">Services</h2>
         <p class="subtitle is-5">What can I do for you?</p>
       </div>
       <div class="container">
@@ -606,10 +606,10 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter" id="photos">
+    <section class="section has-background-grey-lighter" id="photos" aria-labelledby="photosFromEvents">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Photos from past events</h2>
+        <h2 class="title is-2" id="photosFromEvents">Photos from past events</h2>
       </div>
 
       <div class="container portfolio-container">
@@ -792,10 +792,10 @@
         </div>
       </aside>
 
-      <section class="section" id="forum" aria-label="Forum">
+      <section class="section" id="forum" aria-labelledby="forumLabel">
         <div class="container">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Forum</h2>
+            <h2 class="title is-2" id="forumLabel">Forum</h2>
             <p class="subtitle is-5">Discuss any topic with no leaving this page</p>
           </div>
 
@@ -821,7 +821,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                      <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 1</span>
                     </div>
                   </div>
                 </div>
@@ -845,7 +845,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                      <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 0</span>
                     </div>
                   </div>
                 </div>
@@ -869,7 +869,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                      <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 13</span>
                     </div>
                   </div>
                 </div>
@@ -893,7 +893,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                      <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
                     </div>
                   </div>
                 </div>
@@ -917,7 +917,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                      <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
                     </div>
                   </div>
                 </div>
@@ -941,7 +941,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                      <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
                     </div>
                   </div>
                 </div>
@@ -953,28 +953,28 @@
     </div>
 
 
-  <section class="section has-background-light" id="contacts" aria-label="Contact us">
+  <section class="section has-background-light" id="contacts" aria-labelledby="contactUs">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Contact us</h2>
+        <h2 class="title is-2" id="contactUs">Contact us</h2>
         <p class="subtitle is-5">Don't hesitate, ask anything</p>
       </div>
 
       <form class="column is-half is-offset-one-quarter box">
         <div class="field">
           <label class="label" for="name">Name</label>
-            <input class="input" id="name" type="text" placeholder="Text input">
+            <input class="input" id="name" type="text" placeholder="First name">
         </div>
 
         <div class="field">
           <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" id="username" type="text">
+            <input class="input is-success" id="username" type="text" placeholder="Valid user name">
             <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+              <i aria-hidden="true" class="fas fa-user"></i>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+              <i aria-hidden="true" class="fas fa-check"></i>
             </span>
           </div>
           <p class="help is-success">This username is available</p>
@@ -985,10 +985,10 @@
           <div class="control has-icons-left has-icons-right">
             <input class="input is-danger" id="email" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
+              <i aria-hidden="true" class="fas fa-envelope"></i>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
+              <i aria-hidden="true" class="fas fa-exclamation-triangle"></i>
             </span>
           </div>
           <p class="help is-danger">This email is invalid</p>
@@ -1009,7 +1009,7 @@
         <div class="field">
           <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea class="textarea" id="message" placeholder="Textarea"></textarea>
+            <textarea class="textarea" id="message" placeholder="Type your message"></textarea>
           </div>
         </div>
 
@@ -1058,7 +1058,7 @@
           <div class="notification media has-background-white">
             <div class="media-left">
               <span class="icon">
-                <i class="has-text-warning fas fa-columns fa-lg"></i>
+                <i aria-hidden="true" class="has-text-warning fas fa-columns fa-lg"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1075,7 +1075,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-info">
-                <i class="fab fa-lg fa-wpforms"></i>
+                <i aria-hidden="true" class="fab fa-lg fa-wpforms"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1092,7 +1092,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cubes"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-cubes"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1109,7 +1109,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-grey">
-                <i class="fas fa-lg fa-cogs"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-cogs"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1126,7 +1126,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-primary">
-                <i class="fas fa-lg fa-warehouse"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-warehouse"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1143,7 +1143,7 @@
           <div class="notification has-background-white media">
             <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cube"></i>
+                <i aria-hidden="true" class="fas fa-lg fa-cube"></i>
               </span>
             </div>
             <div class="media-content">
@@ -1201,10 +1201,10 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Github" title="open in new tab"><i class="fab fa-github-alt fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
-          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Youtube" title="open in new tab"><i class="fab fa-youtube fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
-          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Facebook" title="open in new tab"><i class="fab fa-facebook fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
-          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Twitter" title="open in new tab"><i class="fab fa-twitter fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
+          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Github" title="open in new tab"><i aria-hidden="true" class="fab fa-github-alt fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
+          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Youtube" title="open in new tab"><i aria-hidden="true" class="fab fa-youtube fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
+          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Facebook" title="open in new tab"><i aria-hidden="true" class="fab fa-facebook fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
+          <a href="https://www.google.com" target="_blank" class="open-in-new-window" aria-label="Twitter" title="open in new tab"><i aria-hidden="true" class="fab fa-twitter fa-2x"></i><span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>
         </div>
         <p>The source code is licensed <a class="open-in-new-window" href="http://opensource.org/licenses/mit-license.php" target="_blank" class="open-in-new-window" title="open in new tab">MIT<span><img class="image-open" aria-hidden="true"  alt="" src="img/new-tab.svg"></span></a>.</p>
       </div>
