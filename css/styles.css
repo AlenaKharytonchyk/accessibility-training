@@ -4,6 +4,12 @@
   outline: black solid 2px !important;
 }
 
+[role="tab"]:focus {
+  border-color: black !important;
+  outline: none !important;
+  border: 2px solid black !important;
+}
+
 .button.is-info {
   background-color: #116fe4 !important;
 }
@@ -201,8 +207,30 @@ li {
   border-radius: 5px;
 }
 
-.open-in-new-window::after {
-  content: '>>';
+/*.open-in-new-window::after {*/
+/*  content: '>>';*/
+/*}*/
+
+.image-open {
+  height: 20px;
+}
+
+.chat-window {
+  display: none;
+}
+
+.chat-window.active {
+  position: fixed;
+  bottom: 10%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  background: lightblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  right: 10%;
 }
 
 .breadcrumbs {
