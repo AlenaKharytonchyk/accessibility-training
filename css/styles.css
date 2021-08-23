@@ -274,3 +274,24 @@ li {
   width: auto;
   clip: auto;
 }
+
+.documentation-menu {
+  background: white;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  top: 60px;
+  padding: 20px;
+  color: black;
+}
+
+.documentation-menu.hide-menu {
+  display: none;
+}
+
+.submenu-arrow {
+  transform: rotate(90deg);
+  height: 20px;
+  width: 20px;
+}
+

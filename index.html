@@ -71,36 +71,68 @@
           <div id="navbarMenu" class="navbar-menu">
             <ul class="navbar-end">
               <li class="navbar-item">
-                <a href="#" class="button is-white is-outlined">
+                <button href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i aria-hidden="true" class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
-                </a>
+                </button>
               </li>
               <li class="navbar-item">
-                <a href="#" class="button is-white is-outlined">
+                <button href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i aria-hidden="true" class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
-                </a>
+                </button>
               </li>
               <li class="navbar-item">
-                <a href="#" class="button is-white is-outlined">
+                <button href="#" class="button is-white is-outlined has-submenu-button" id="menubutton" aria-expanded="false" aria-haspopup="true">
                   <span class="icon">
                     <i aria-hidden="true" class="fa fa-book"></i>
                   </span>
-                  <span>Documentation</span>
-                </a>
+                  <span>Documentation
+                  <span>
+                    <img class="submenu-arrow" aria-hidden="true"  alt="" src="img/arrow_sans_right-512.png">
+                  </span>
+                  </span>
+                </button>
+                <ul role="menu" class="documentation-menu hide-menu" aria-labelledby="menubutton">
+                  <li role="none">
+                    <a role="menuitem" href="/Administration" tabindex="-1">
+                      Administration
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="/Team settings" tabindex="-1">
+                      Team settings
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="/Manage your team" tabindex="-1">
+                      Manage your team
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="/Invitations" tabindex="-1">
+                      Invitations
+                    </a>
+                  </li>
+                  <hr/>
+                  <li role="none">
+                    <a role="menuitem" href="/Authentication" tabindex="-1">
+                      Authentication
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="navbar-item">
-                <a href="#" class="button is-white is-outlined">
+                <button href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i aria-hidden="true" class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -346,7 +378,7 @@
     </section>
 
     <div class="tab-content container">
-      <div class="tab-pane is-active" id="pane-1" class="level">
+      <div class="tab-pane is-active" role="tabpanel" id="pane-1" class="level">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -402,7 +434,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-2">
+      <div class="tab-pane" role="tabpanel" id="pane-2">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -471,7 +503,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3">
+      <div class="tab-pane" role="tabpanel" id="pane-3">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
