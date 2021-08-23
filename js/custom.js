@@ -37,14 +37,17 @@ document.querySelector('.dropMenu').addEventListener('keydown', (e)=> {
   }
 });
 
-// document.querySelector('.navbar-burger').addEventListener('focus', ({code})=>{
-//   if(document.querySelector('.navbar-burger').classList.contains('.is-active')) {
-//     document.querySelector('.navbar-burger').setAttribute('aria-label', 'Close navigation menu');
-//   } else {
-//     document.querySelector('.navbar-burger').setAttribute('aria-label', 'Open navigation menu');
-//   }
-// })
+const navButton = document.querySelector('.navbar-burger');
 
+navButton.addEventListener('click', () => {
+  if (navButton.getAttribute('aria-label') === 'Open menu') {
+    navButton.setAttribute('aria-label', 'Close menu');
+    navButton.focus();
+  } else {
+    navButton.setAttribute('aria-label', 'Open menu');
+    navButton.focus();
+  }
+});
 
 setInterval(() => document.querySelector('.chat-window').classList.toggle('active'), 5000);
 
