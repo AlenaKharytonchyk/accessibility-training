@@ -69,7 +69,7 @@ navButton.addEventListener('click', () => {
   }
 });
 
-setInterval(() => document.querySelector('.chat-window').classList.toggle('active'), 5000);
+// setInterval(() => document.querySelector('.chat-window').classList.toggle('active'), 5000);
 
 function openSkipToMain (e) {
   if(e.keyCode === 13 || e.keyCode === 32) {
@@ -79,7 +79,6 @@ function openSkipToMain (e) {
 
 function openTab(selectedNav, targetId) {
   var tabs = document.querySelectorAll(".tab-pane");
-  console.log(selectedNav, targetId)
   tabs.forEach(function (tab) {
     if (tab.id == targetId) {
       tab.style.display = "block";
